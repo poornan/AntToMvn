@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class RepoTest {
-    public static final Path ROOT = Paths.get("C:/Users/AnanthaneshanElampoo/Desktop/repo");
+    public static final Path ROOT = Paths.get("src/test/resources/repo");
     Repo repo;
 
     @BeforeEach
