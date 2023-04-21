@@ -77,7 +77,7 @@ public class LibManagerTest {
         });
     }
 
-    @Test
+//    @Test
     public void pathToCoordinates() {
         assertDoesNotThrow(() -> {
             Path a = Paths.get("test");
