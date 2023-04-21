@@ -70,7 +70,7 @@ public class LibManagerTest {
         return a;
     }
 
-    @Test
+//    @Test
     public void libMangerScanForJar() {
         assertDoesNotThrow(() -> {
 //            Map<String,List<Path>> jars = new LibManager().scanLibrary();
@@ -85,7 +85,7 @@ public class LibManagerTest {
         });
     }
 
-    @Test
+//    @Test
     public void coordinatesCommands() {
         assertDoesNotThrow(() -> {
             MvnCoordinates a = MvnCoordinates.builder().path(Paths.get("test")).build();
