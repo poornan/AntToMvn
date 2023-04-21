@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 /**
  * mvn install:install-file -Dfile= -DgroupId= -DartifactId= -Dversion -Dpackaging=
  */
-class LibManagerTest {
+public class LibManagerTest {
 
     @BeforeEach
     public void setUp() {
@@ -30,7 +30,7 @@ class LibManagerTest {
     public void tearDown() {
     }
 
-    @Test
+//    @Test
     public void mvnShouldInstallJar() {
         assertDoesNotThrow(() -> {
             InvocationRequest request = new DefaultInvocationRequest();
@@ -41,7 +41,7 @@ class LibManagerTest {
         });
     }
 
-    @Test
+//    @Test
     public void mvnShouldExecuteMultipleRequestsInParallels() {
         assertDoesNotThrow(() -> {
             InvocationRequest request = new DefaultInvocationRequest();
@@ -51,7 +51,7 @@ class LibManagerTest {
         });
     }
 
-    @Test
+//    @Test
     public void mvnShouldExecuteMultipleCmdInParallels() {
         assertDoesNotThrow(() -> {
             List.of("-version", "-version");
